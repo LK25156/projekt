@@ -1,53 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LocalLens</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-<h1>LocalLens - České Budějovice</h1>
-<div class="den">
-<h2>Pátek večer</h2>
-<ul>
-  <li><strong>Večeře:</strong> 
-    <a href="https://www.sularrepa.cz/" target="_blank">Restaurace Sůl a Řepa</a> <!--odkaz se otevře v nové záložce-->
-    <br><img src="sul-a-repa.jpg" alt="Restaurace Sůl a Řepa"> <!--najít obrázek-->
-    <p>Moderní česká kuchyně s důrazem na sezónní suroviny a lokální produkty.</p>
-    <button onclick="showMap('https://goo.gl/maps/XYZ')">Zobrazit na mapě</button><!--odkaz na mapě-->
-    <!--druhý podnik, kam zajít-->
-  </li>
-  <li>
-  <strong>Večerní program:</strong><a href="https://www.jazzcafeclub.cz/" target="_blank">Jazz Café Club></a>
-  <img src="jazz-cafe.jpg" alt="Jazz Café Club">
-  <button onclick="showMap('https://goo.gl/maps/ABC')">Zobrazit na mapě</button>
-<!--2.možnost-->
-</li>
-</ul>
-</div>
-  <!--neděle-->
-  <div class="den">
-    <h2>Sobota</h2>
-    <ul>
-      <li><strong>Snídaně:</strong> Café Datel nebo Kavárna VLNNA</li>
-      <li><strong>Dopolední aktivity:</strong>Černá věž nebo ......</li>
-      <li><strong>Oběd:</strong>Restaurace Naše Farma nebo Bistro Magdelene</li>
-      <li><strong>Odpolední aktivity:</strong>Pivovar Budvar nebo Jihočeské muzeum</li>
-      <li><strong>Večer:</strong>Divadlo J. K. Tyla nebo Kino Kotva</li>
-    </ul>
-  </div>
-  <!--neděle-->
-  <div class="den">
-    <h2>Neděle</h2>
-    <ul>
-      <li><strong>Snídaně:</strong>Kavárna Lanna nebo Brunch Café</li>
-      <li><strong>Výlet:</strong>Zámek Hluboká nad Vltavou nebo výlet na horu Kleť</li>
-      <li><strong>Oběd:</strong>Restaurace Solidní Šance nebo Horská chata Kleť</li>
-      
-    </ul>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Lens</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Local Lens - České Budějovice</h1>
+    <div class="den">
+      <h2>Pátek večer</h2>
+      <ul>
+        <li>
+          <strong>Večeře:</strong>
+          <a href="https://www.sularrepa.cz/" target="_blank"
+            >Restaurace Sůl a Řepa</a
+          >
+          <br /><img src="sul-a-repa.jpg" alt="Restaurace Sůl a Řepa" />
+          <p>
+            Moderní česká kuchyně s důrazem na sezónní suroviny a lokální
+            produkty.
+          </p>
+          <button onclick="showMap('https://goo.gl/maps/XYZ')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <li>
+          <strong>Večeře:</strong>
+          <a href="https://www.restauracepaluba.cz/" target="_blank"
+            >Restaurace Paluba</a
+          >
+          <br /><img src="paluba.jpg" alt="Restaurace Paluba" />
+          <p>
+            Jedinečné posezení nad Mlýnskou stokou v městském parku s kouzelnou
+            atmosférou a moderní kuchyní.
+          </p>
+          <button onclick="showMap('https://goo.gl/maps/XA7Gm6DFT5a4')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <li>
+          <strong>Večerní program:</strong>
+          <a href="https://www.jazzcafeclub.cz/" target="_blank"
+            >Jazz Café Club></a>
+          <p><!--popisek clubu--></p>
+          <img src="jazz-cafe.jpg" alt="Jazz Café Club" />
+          <button onclick="showMap('https://')">Zobrazit na mapě</button>
+        </li>
+        <li>
+          <strong>Večerní program:</strong>
+          <a href="https://www.singerpub.cz/" target="_blank">Singer Pub</a>
+          <br><img src="singer-pub.jpg" alt="Singer Pub" />
+          <p>
+            Oblíbený bar s minipivovarem, kde si kromě piva můžeš vychutnat
+            skvělé koktejly a příjemnou atmosféru.
+          </p>
+          <button onclick="showMap('https://goo.gl/maps/XA7Gm6DFT5a4')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <li>
+            <strong>Večerní program:</strong> 
+            <a href="https://www.budejce.cz/aktivity/5-samsonova-kasna" target="_blank">Náměstí Přemysla Otakara II.</a>
+            <br><img src="namesti-premysla-otakara.jpg" alt="Náměstí Přemysla Otakara II.">
+            <p>Srdce města s historickými budovami a ikonickou barokní Samsonovou kašnou, která byla postavena v letech 1720–1727.</p>
+            <button onclick="showMap('https://goo.gl/maps/example')">Zobrazit na mapě</button>
+        </li>
+      </ul>
+    </div>
+    <!--sobota-->
+    <div class="den">
+      <h2>Sobota</h2>
+      <ul>
+        <li>
+          <!--snídaně-->
+          <strong>Snídaně:</strong>
+          <a href="https://www.cafedatel.cz/" target="_blank">Café Datel</a>
+          <br /><img src="cafe-datel.jpg" alt="Café Datel" />
+          <p>
+            Malá kavárna s výběrovou kávou a domácím pečivem, ideální pro
+            pohodovou snídani.
+          </p>
+          <button onClick="showMap('https://goo.gl/maps/XF8jqvn9dYy')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <li>
+          <strong>Snídaně:</strong>
+          <a href="https://kavarnavlnna.cz/" target="_blank">Kavárna VLNNA</a>
+          <br><img src="kavarna-vlnna.jpg" alt="Kavárna VLNNA" />
+          <p>
+            Plovoucí kavárna na řece Malši, která nabízí skvělou snídani s
+            jedinečným výhledem.
+          </p>
+          <button onClick="showMap('https://goo.gl/maps/XF8jqvn9dYy')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <!--dopolední program-->
+        <li>
+          <strong>Dopolední aktivity:</strong>
+          <a href="https://www.jiznicechy.cz/" target="_blank">Černá věž</a>
+          <br><img src="cerna-vez.jpg" alt="Černá věž" />
+          <p>
+            Historická věž z 16. století s nádherným panoramatickým výhledem na
+            České Budějovice
+          </p>
+          <button onClick="showMap('https://')">Zobrazit na mapě</button>
+        </li>
+        <li>
+          <strong>Dopolední aktivity:</strong>
+          <a href="https://www.example.com" target="_blank"
+            >Komentované plavby po Malši a Vltavě</a
+          >
+          <br><img
+            src="plavba-malsi-vltava.jpg"
+            alt="Komentované plavby po Malši a Vltavě"
+          />
+          <p>
+            Objev historické centrum Českých Budějovic z vody, projdi se kolem
+            soutoku Malše a Vltavy a prozkoumej městské hradby.
+          </p>
+          <button onclick="showMap('https://goo.gl/maps/example')">
+            Zobrazit na mapě
+          </button>
+        </li>
+        <!--oběd So -->
+        <ul>
+        <li>
+          <strong>Oběd:</strong>
+          <a href="https://www.nasefarma.cz/" target="_blank"
+            >Restaurace Naše Farma</a>
+          <br><img src="nase-farma.jpg" alt="Restaurace Naše Farma" />
+          <p>
+            Restaurace zaměřená na lokální suroviny, kvalitní maso a sezónní
+            menu.
+          </p>
+          <button onClick="showMap('https://')">Zobrazit na mapě</button>
+        </li>
+        <li>
+          <strong>Oběd:</strong>
+          <a href="https://www.nasefarma.cz/" target="_blank"
+            >Bistro Magdelene</a>
+          <br><img src="bistro-magdalene.jpg" alt="Bistro Magdelene" />
+          <p>
+            Moderní bistro s kreativními vegetariánskými a veganskými pokrmy.
+          </p>
+          <button onClick="showMap('https://')">Zobrazit na mapě</button>
+        </li>
+        </ul>
+        <!--Odpolední aktivity - Budvar, Jihočeské muzeum-->
+      <ul>
+        <li>
+          <strong>Odpolední aktivity:</strong>
+           <a href="https://www.budvar.cz/" target="_blank">Pivovar Budvar</a>
+            <br><img src="budvar.jpg" alt="Pivovar Budvar">
+            <p>Prohlídka slavného pivovaru spojená s ochutnávkou.</p>
+            <button onclick="showMap('https://goo.gl/maps/LQx9HzP6zZC2')">Zobrazit na mapě</button>
+        </li>
+        <li>
+            <strong>Odpolední program:</strong> 
+            <a href="https://www.muzeumcb.cz/" target="_blank">Jihočeské muzeum</a>
+            <br><img src="jihoceske-muzeum.jpg" alt="Jihočeské muzeum">
+            <p>Muzeum s bohatými expozicemi věnovanými historii regionu, přírodním vědám a archeologii.</p>
+            <button onclick="showMap('https://goo.gl/maps/dMKvAqKcJX22')">Zobrazit na mapě</button>
+        </li>
+        </ul>
+        <!--Odpolední program - sportovní odpoledne ve městě-->
+        <ul>
+        <li>
+            <strong>Sportovní aktivita:</strong> 
+            <a href="https://www.plaveckystadioncb.cz/" target="_blank">Plavání na Plaveckém stadionu</a>
+            <br><img src="plavecky-stadion.jpg" alt="Plavecký stadion České Budějovice">
+            <p>Moderní bazén s wellness zónou, ideální pro relaxaci i sportovní plavání.</p>
+            <button onclick="showMap('https://goo.gl/maps/XYZ')">Zobrazit na mapě</button>
+        </li>
 
-</body>
+        <li>
+            <strong>Sportovní aktivita:</strong> 
+            <a href="https://www.sportovnihala.cz/" target="_blank">Lezení na horolezecké stěně</a>
+            <br><img src="horolezecka-stena.jpg" alt="Horolezecká stěna České Budějovice">
+            <p>Indoor lezecké centrum vhodné pro začátečníky i pokročilé, s různými obtížnostmi stěn.</p>
+            <button onclick="showMap('https://goo.gl/maps/ABC')">Zobrazit na mapě</button>
+        </li>
+    </ul>
+        <!--Večeře SO-->
+
+
+        <li><strong>Večer:</strong>
+          Divadlo J. K. Tyla nebo Kino Kotva</li>
+      </ul>
+    </div>
+    <!--neděle-->
+    <div class="den">
+      <h2>Neděle</h2>
+      <ul>
+        <li><strong>Snídaně:</strong>Kavárna Lanna nebo Brunch Café</li>
+        <!--sportovní dopoledne neděle-->
+        <ul>
+        <li>
+            <strong>Sportovní aktivita:</strong> 
+            <a href="https://www.jiznicechy.cz/" target="_blank">Jízda na kole kolem Vrbenských rybníků</a>
+            <br><img src="vrbenske-rybniky.jpg" alt="Vrbenské rybníky">
+            <p>Krásná přírodní rezervace ideální pro cyklistiku. Nabízí klidné trasy v nádherné krajině, obklopené vodními plochami a lužními lesy.</p>
+            <p><strong>Lokalita:</strong> Severozápadně od Českých Budějovic</p>
+            <button onclick="showMap('https://goo.gl/maps/example1')">Zobrazit na mapě</button>
+        </li>
+
+        <li>
+            <strong>Sportovní aktivita:</strong> 
+            <a href="https://www.example.com" target="_blank">Kajak nebo paddleboard na řece Malši</a>
+            <br><img src="kajak-malše.jpg" alt="Kajak na Malši">
+            <p>Vyzkoušej jízdu na kajaku nebo paddleboardu po řece Malši, skvělý zážitek v srdci města. Možnost zapůjčení vybavení v místních půjčovnách.</p>
+            <p><strong>Lokalita:</strong> Sokolský ostrov, České Budějovice</p>
+            <button onclick="showMap('https://goo.gl/maps/example2')">Zobrazit na mapě</button>
+        </li>
+    </ul>
+    <!--Výlet v okolí Českých Budějovic-->
+        <li>
+          <strong>Výlet:</strong>
+           <ul>
+        <li>
+            <strong>Výlet:</strong> 
+            <a href="https://www.zamek-hluboka.cz/cs" target="_blank">Zámek Hluboká nad Vltavou</a>
+            <br><img src="zamek-hluboka.jpg" alt="Zámek Hluboká nad Vltavou">
+            <p>Pohádkový zámek inspirovaný anglickou Windsor Castle, obklopený nádherným parkem. Nabízí prohlídkové okruhy s historickými interiéry.</p>
+            <button onclick="showMap('https://goo.gl/maps/XA7Gm6DFT5a4')">Zobrazit na mapě</button>
+        </li>
+
+        <li>
+            <strong>Výlet:</strong> 
+            <a href="https://zamekhluboka.info/hora-klet-s-rozhlednou/" target="_blank">Hora Kleť</a>
+            <br><img src="hora-klet.jpg" alt="Hora Kleť">
+            <p>Nejvyšší vrchol Blanského lesa (1083 m) s historickou kamennou rozhlednou a hvězdárnou. Nabízí nádherné výhledy na Šumavu a Alpy.</p>
+            <p><strong>Trasa:</strong> Holubov → Kleť (6,5 km) nebo lanovka z Krasetína</p>
+            <button onclick="showMap('https://goo.gl/maps/example')">Zobrazit na mapě</button>
+        </li>
+    </ul>
+
+        </li>
+        <li>
+          <strong>Oběd:</strong>
+          <ul>
+        <li>
+            <a href="https://solidnisance.cz/" target="_blank">Restaurace Solidní Šance</a>
+            <br><img src="solidni-sance.jpg" alt="Restaurace Solidní Šance">
+            <p>Nejstarší hostinec v Hluboké nad Vltavou s tradiční českou kuchyní a lokálními surovinami. Nabízí stylový interiér a příjemnou atmosféru.</p>
+            <button onclick="showMap('https://goo.gl/maps/example1')">Zobrazit na mapě</button>
+        </li>
+
+        <li>
+            <strong>Oběd na hoře Kleť:</strong> 
+            <a href="http://www.klet.com/" target="_blank">Horská chata Kleť</a>
+            <br><img src="horska-chata-klet.jpg" alt="Horská chata Kleť">
+            <p>Turistická chata na vrcholu hory Kleť s restaurací, rozhlednou a možností ubytování. Ideální místo pro odpočinek po výšlapu.</p>
+            <button onclick="showMap('https://goo.gl/maps/example2')">Zobrazit na mapě</button>
+        </li>
+    </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
