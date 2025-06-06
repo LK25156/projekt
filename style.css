@@ -33,3 +33,13 @@
   transition: 0.7s ease;
 
 }
+
+.slider-images .slider-img:first-child,
+.slider-images .slider-img:last-child {
+  height: 480px
+}
+
+.slider-images .slider-img:nth-child(2),
+.slider-images .slider-img:nth-child(3) {
+  height: 560px;
+}
